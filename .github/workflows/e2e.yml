@@ -20,7 +20,7 @@ jobs:
           python -c "import sabana; print(sabana.__version__)"
       - name: Download sabana CLI
         run: |
-          curl https://sabana.s3.us-west-2.amazonaws.com/cli/sabana_linux_x86_64_v0.1.3.tar.gz --output sabana.tar.gz && tar xf sabana.tar.gz && rm sabana.tar.gz
+          curl https://sabana.s3.us-west-2.amazonaws.com/cli/sabana_linux_x86_64_v0.1.4.tar.gz --output sabana.tar.gz && tar xf sabana.tar.gz && rm sabana.tar.gz
       - name: Push project
         run: |
           ./sabana push
